@@ -3,6 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// 引入scss
+import './index.scss'
+
+import 'antd/dist/antd.min.css'
+// 再导入全局样式文件，防止样式覆盖！
+import './index.css'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
