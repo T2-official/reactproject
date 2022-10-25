@@ -12,7 +12,7 @@ function Login() {
     const { mobile, code } = values
     try {
       await loginStore.login({ mobile, code })
-      // navigate('/')
+      navigate('/')
       message.success('登录成功')
     } catch (e) {
       message.error(e.response?.data?.message || '登录失败')
